@@ -1,0 +1,26 @@
+services:
+  climade-dashboard:
+    container_name: climade-dashboard-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - APP_PORT=${APP_PORT}
+    env_file:
+      - .env
+    ports:
+      - '${APP_PORT}:${APP_PORT}'
+    environment:
+      - DASH_HOST=${DASH_HOST}
+      - DASH_PORT=${DASH_PORT}
+      - DASH_USER=${DASH_USER}
+      - DASH_PASSWORD=${DASH_PASSWORD}
+      - DASH_DATABASE=${DASH_DATABASE}
+      - CARTO_API_KEY=${CARTO_API_KEY}
+    networks:
+      - climade-network
+
+networks:
+  climade-network:
+    name: climade-network
+    external: true

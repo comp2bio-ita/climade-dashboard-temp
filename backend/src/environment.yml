@@ -1,0 +1,32 @@
+name: climade-dashboard
+
+channels:
+    - conda-forge
+    - bioconda
+    - defaults
+
+dependencies:
+    - python=3.12
+    - pip
+    - numpy=1.26.4 # for old server processors
+    - scipy=1.12.0 # for old server processors
+    - pandas=2.1.4 # for old server processors
+    - contourpy=1.3.1 # for old server processors
+    - mafft
+    - fasttree
+    - treetime
+    - biopython=1.85
+    - requests=2.32.3
+    - duckdb=1.1.1
+    - sqlalchemy=2.0.35
+    - pymysql
+    - cryptography
+    - iqtree
+    - nextclade
+    - dendropy
+    - pip:
+          #   - phylo-treetime
+          - mysql-connector-python==9.0.0
+          - pydantic==2.9.2
+          - pydantic-settings==2.5.2
+          - python-dotenv==1.0.1

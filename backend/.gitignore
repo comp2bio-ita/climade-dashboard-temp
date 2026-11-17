@@ -1,0 +1,32 @@
+env
+.env
+docker_volumes
+
+.nextflow*
+work
+
+.cursor/
+
+**/.nextflow*
+**/work
+
+*venv*
+__pycache__
+**/__pycache__
+logs/*
+!logs/.gitkeep
+
+docs/
+!backend/phylo_module/docs/
+
+# Generated biological artifacts
+backend/data/
+
+# Keep small reproducible examples
+!backend/data/examples/
+!backend/phylo_module/data/sequences/.gitkeep
+!backend/phylo_module/data/alignments/.gitkeep
+!backend/phylo_module/data/trees/.gitkeep
+
+__pycache__/
+*.pyc

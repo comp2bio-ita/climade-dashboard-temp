@@ -1,0 +1,276 @@
+/* Dashboard Color Scheme - CSS Classes */
+
+/* Title Colors */
+.dashboard-h2 {
+    color: #336EB0 !important;
+    /* Main pathogen titles in header */
+}
+
+.dashboard-h4 {
+    color: #2c3e50 !important;
+    /* Sequence/country counts */
+}
+
+.dashboard-h5 {
+    color: #2c3e50 !important;
+    /* Chart titles */
+}
+
+/* Label Colors */
+.dashboard-form-label {
+    color: #2c3e50 !important;
+    /* Form labels */
+}
+
+.dashboard-pathogen-label {
+    color: #2c3e50 !important;
+    /* Pathogen selection labels */
+}
+
+.dashboard-filter-label {
+    color: #2c3e50 !important;
+    /* Filter labels */
+}
+
+/* Button Colors */
+.dashboard-btn-apply {
+    color: #336EB0 !important;
+    border-color: #336EB0 !important;
+    background-color: #ffffff !important;
+}
+
+.dashboard-btn-apply:hover {
+    color: #ffffff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.dashboard-btn-advanced {
+    color: #336EB0 !important;
+    border-color: #336EB0 !important;
+    background-color: #ffffff !important;
+}
+
+.dashboard-btn-advanced:hover {
+    color: #ffffff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.dashboard-btn-reset {
+    color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    background-color: #ffffff !important;
+}
+
+.dashboard-btn-reset:hover {
+    color: #ffffff !important;
+    background-color: #dc3545 !important;
+}
+
+.dashboard-btn-download {
+    color: #28a745 !important;
+    border-color: #28a745 !important;
+    background-color: #ffffff !important;
+}
+
+.dashboard-btn-download:hover {
+    color: #ffffff !important;
+    background-color: #28a745 !important;
+}
+
+/* Select/Dropdown Colors */
+.dashboard-select-serotype {
+    color: #2c3e50 !important;
+    border-color: #ced4da !important;
+    background-color: #ffffff !important;
+}
+
+.dashboard-select-serotype:focus {
+    border-color: #007bff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+/* Header-specific dropdown styling */
+.dashboard-select-serotype .Select-control {
+    border: 1px solid #ced4da !important;
+    border-radius: 0.375rem !important;
+    background-color: #ffffff !important;
+    min-height: 38px !important;
+}
+
+.dashboard-select-serotype .Select-control:hover,
+.dashboard-select-serotype .Select-control:focus {
+    border-color: #007bff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+.dashboard-select-serotype .Select-value-label {
+    color: #2c3e50 !important;
+}
+
+.dashboard-select-serotype .Select-input>input {
+    color: #2c3e50 !important;
+}
+
+.dashboard-select-serotype .Select-arrow-zone {
+    color: #6c757d !important;
+}
+
+.dashboard-select-region {
+    color: #28a745 !important;
+    border-color: #ced4da !important;
+    background-color: #ffffff !important;
+}
+
+.dashboard-select-region:focus {
+    border-color: #28a745 !important;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+}
+
+.dashboard-select-date {
+    color: #6f42c1 !important;
+    border-color: #ced4da !important;
+    background-color: #ffffff !important;
+}
+
+.dashboard-select-date:focus {
+    border-color: #6f42c1 !important;
+    box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25) !important;
+}
+
+.dashboard-select-genotype {
+    color: #fd7e14 !important;
+    border-color: #ced4da !important;
+    background-color: #ffffff !important;
+}
+
+.dashboard-select-genotype:focus {
+    border-color: #fd7e14 !important;
+    box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25) !important;
+}
+
+.dashboard-select-host {
+    color: #20c997 !important;
+    border-color: #ced4da !important;
+    background-color: #ffffff !important;
+}
+
+.dashboard-select-host:focus {
+    border-color: #20c997 !important;
+    box-shadow: 0 0 0 0.2rem rgba(32, 201, 151, 0.25) !important;
+}
+
+/* Container Colors */
+.dashboard-card {
+    background-color: #ffffff !important;
+    border-color: #dee2e6 !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.dashboard-section {
+    background-color: #f8f9fa !important;
+}
+
+.dashboard-divider {
+    border-color: #e9ecef !important;
+}
+
+/* Status Colors */
+.dashboard-status-success {
+    color: #28a745 !important;
+}
+
+.dashboard-status-warning {
+    color: #ffc107 !important;
+}
+
+.dashboard-status-danger {
+    color: #dc3545 !important;
+}
+
+.dashboard-status-info {
+    color: #17a2b8 !important;
+}
+
+.dashboard-status-primary {
+    color: #007bff !important;
+}
+
+.dashboard-status-secondary {
+    color: #6c757d !important;
+}
+
+/* Plotly Dash Dropdown Filter Colors */
+/* Customize the dropdown options menu */
+.Select-menu-outer {
+    background-color: #ffffff !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 0.375rem !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Customize the dropdown options text */
+.Select-option {
+    color: #2c3e50 !important;
+    background-color: #ffffff !important;
+    padding: 0.5rem 0.75rem !important;
+}
+
+/* Customize hover state for dropdown options */
+.Select-option:hover,
+.Select-option:focus {
+    background-color: #f8f9fa !important;
+    color: #2c3e50 !important;
+}
+
+/* Customize selected option text */
+.Select-value-label {
+    color: #2c3e50 !important;
+}
+
+/* Customize the input text in dropdown */
+.Select-input>input {
+    color: #2c3e50 !important;
+}
+
+/* Customize placeholder text */
+.Select-placeholder {
+    color: #6c757d !important;
+}
+
+/* Customize the dropdown control */
+.Select-control {
+    border: 1px solid #ced4da !important;
+    border-radius: 0.375rem !important;
+    background-color: #ffffff !important;
+}
+
+/* Customize dropdown control when focused */
+.Select-control:hover,
+.Select-control:focus {
+    border-color: #007bff !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+/* Customize the dropdown arrow */
+.Select-arrow-zone {
+    color: #6c757d !important;
+}
+
+/* Customize multi-select tags */
+.Select-multi-value-wrapper .Select-value {
+    background-color: #e9ecef !important;
+    border: 1px solid #ced4da !important;
+    color: #2c3e50 !important;
+    border-radius: 0.25rem !important;
+}
+
+/* Customize multi-select tag remove button */
+.Select-multi-value-wrapper .Select-value-icon {
+    color: #6c757d !important;
+}
+
+.Select-multi-value-wrapper .Select-value-icon:hover {
+    color: #dc3545 !important;
+}

@@ -1,0 +1,75 @@
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: dash_infra-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DASH_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - '3306:3306'
+    networks:
+      - pipeline_net
+      - climade-network
+    healthcheck:
+      test:
+        [
+          'CMD',
+          'mysqladmin',
+          'ping',
+          '-h',
+          'localhost',
+          '-u',
+          'root',
+          '-p${MYSQL_ROOT_PASSWORD}',
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+      secrets:
+        - cert_ca
+    container_name: climade-dashboard-backend
+    environment:
+      DASH_HOST: ${DASH_HOST}
+      DASH_PORT: ${DASH_PORT}
+      DASH_USER: ${DASH_USER}
+      DASH_PASSWORD: ${DASH_PASSWORD}
+      DASH_DATABASE: ${DASH_DATABASE}
+      NCBI_EMAIL: ${NCBI_EMAIL}
+      NCBI_API_KEY: ${NCBI_API_KEY}
+    depends_on:
+      mysql:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          memory: ${BACKEND_MEMORY_LIMIT}
+    networks:
+      - pipeline_net
+    # Keep container alive indefinitely for interactive/manual use
+    tty: true
+    stdin_open: true
+    command: tail -f /dev/null
+
+networks:
+  pipeline_net:
+    name: pipeline_net
+    driver: bridge
+  climade-network:
+    name: climade-network
+    driver: bridge
+
+secrets:
+  cert_ca:
+    file: ${CA_CERT_PATH}
+
+volumes:
+  mysql_data:

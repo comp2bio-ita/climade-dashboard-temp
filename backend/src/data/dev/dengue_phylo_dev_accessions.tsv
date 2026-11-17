@@ -1,0 +1,8 @@
+genbank_sequence_data_id	serotype	genotype	major_lineage	minor_lineage	country	host	locus_class
+FJ850076.1	DENV2	2III	2III_E		Brazil	Homo sapiens	complete_genome
+FJ850078.1	DENV2	2III	2III_E		Brazil	Homo sapiens	complete_genome
+FJ850088.1	DENV2	2III	2III_E		Brazil	Homo sapiens	complete_genome
+GQ868550.1	DENV2	2III	2III_C		Brazil	Homo sapiens	complete_genome
+GQ868551.1	DENV2	2III	2III_C		Brazil	Homo sapiens	complete_genome
+GU131864.1	DENV2	2III	2III_C		Brazil	Homo sapiens	complete_genome
+GU131882.1	DENV2	2III	2III_C		Brazil	Homo sapiens	complete_genome

@@ -1,0 +1,19 @@
+# Project dependencies (install from repo root: pip install -r requirements.txt)
+# Backend + phylo_module share this file. Do not use the "Bio" package — use biopython for Entrez/SeqIO.
+
+biopython==1.85
+pandas==2.2.3
+requests==2.32.3
+duckdb==1.1.1
+duckdb-engine==0.13.2
+mysql-connector-python==9.0.0
+sqlalchemy==2.0.35
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+
+
+phylo-treetime==0.12.1
+#conda
+# iqtree==2.4.0
+

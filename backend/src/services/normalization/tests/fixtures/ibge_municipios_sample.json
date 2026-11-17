@@ -1,0 +1,80 @@
+[
+  {
+    "id": 3106200,
+    "nome": "Belo Horizonte",
+    "microrregiao": {
+      "mesorregiao": {
+        "UF": {
+          "id": 31,
+          "sigla": "MG",
+          "nome": "Minas Gerais"
+        }
+      }
+    }
+  },
+  {
+    "id": 3550308,
+    "nome": "São Paulo",
+    "microrregiao": {
+      "mesorregiao": {
+        "UF": {
+          "id": 35,
+          "sigla": "SP",
+          "nome": "São Paulo"
+        }
+      }
+    }
+  },
+  {
+    "id": 1200401,
+    "nome": "Rio Branco",
+    "microrregiao": {
+      "mesorregiao": {
+        "UF": {
+          "id": 12,
+          "sigla": "AC",
+          "nome": "Acre"
+        }
+      }
+    }
+  },
+  {
+    "id": 3304557,
+    "nome": "Rio de Janeiro",
+    "microrregiao": {
+      "mesorregiao": {
+        "UF": {
+          "id": 33,
+          "sigla": "RJ",
+          "nome": "Rio de Janeiro"
+        }
+      }
+    }
+  },
+  {
+    "id": 2201903,
+    "nome": "Bom Jesus",
+    "microrregiao": {
+      "mesorregiao": {
+        "UF": {
+          "id": 22,
+          "sigla": "PI",
+          "nome": "Piauí"
+        }
+      }
+    }
+  },
+  {
+    "id": 2401702,
+    "nome": "Bom Jesus",
+    "microrregiao": {
+      "mesorregiao": {
+        "UF": {
+          "id": 24,
+          "sigla": "RN",
+          "nome": "Rio Grande do Norte"
+        }
+      }
+    }
+  }
+]
