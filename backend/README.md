@@ -4,7 +4,7 @@ This repo was created to keep the cloud infra config files and steps
 
 ## Setting up .env files
 
-Before running the container, make sure to create `.env` files in the root folder of this directory `./` and in `backend/`. You can use the .env.example files as a guide.
+Before running the container, make sure to create `.env` files in the root folder of this directory `./` and in `src/`. You can use the .env.example files as a guide.
 
 Required environment variables:
 
